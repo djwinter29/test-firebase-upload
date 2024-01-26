@@ -25,6 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - run: mkdir -p path/to/artifact
       - run: echo hello > path/to/artifact/world.txt
+             echo ${{ secrets.GCP_SA_KEY }}
       
       # Runs a single command using the runners shell
       - name: Upload a Build Artifact
