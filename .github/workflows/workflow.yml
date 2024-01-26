@@ -49,6 +49,6 @@ jobs:
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
-          args: deploy
+          args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.GCP_SA_KEY }}
